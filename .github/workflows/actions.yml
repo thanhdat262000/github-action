@@ -2,7 +2,7 @@ name: Actions
 on:
   schedule:
     - cron: "0/2 * * * *"
-  push:
+  # push:
   pull_request:
     types: [closed, opened]
 jobs:
