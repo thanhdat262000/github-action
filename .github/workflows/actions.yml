@@ -1,5 +1,10 @@
 name: Actions
-on: [push]
+on:
+  schedule:
+    -cron: "0/2 * * * *"
+  push:
+  pull_request:
+    types: [closed, opened]
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
