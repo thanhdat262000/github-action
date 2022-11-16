@@ -1,7 +1,7 @@
 name: Actions
 on:
   schedule:
-    -cron: "0/2 * * * *"
+    - cron: "0/2 * * * *"
   push:
   pull_request:
     types: [closed, opened]
